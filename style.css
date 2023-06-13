@@ -1,0 +1,100 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+			background-image: url("imagem10.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+
+        h1 {
+            text-align: center;
+			color: white;
+        }
+		b{
+            text-align: center;
+			color: black;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 97%;
+            padding: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+			background: rgba(255,255,255,0.9);
+
+        }
+
+        textarea {
+            height: 85px;
+        }
+
+        .site-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .site-list li {
+            margin-bottom: 10px;
+            background: rgba(255,255,255,0.7);
+            padding: 10px;
+        }
+		label {
+		font- weight: bold;
+		margin-bottom: 5px;
+		color:white;
+	}
+	button {
+ --color: #015bac;
+ font-family: inherit;
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: var(--color);
+}
+
+button:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+button:hover {
+ color: #fff;
+}
+
+button:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+button:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+button:active:before {
+ background: #015bac;
+ transition: background 0s;
+}

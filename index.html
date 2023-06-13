@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ferramenta de Teste de Front-end</title>
+    <script src="javaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Seja bem-vindo! Vamos começar os testes de Front-end</h1>
+    <br>
+    <form id="test-form">
+        <label for="site-name">Nome do Site:</label>
+        <input type="text" id="site-name" placeholder="Digite o nome do site" required>
+        <label for="test-case">Casos de Teste:</label>
+        <textarea id="test-case" placeholder="Digite os casos de teste" required></textarea>
+
+        <label for="test-result">Resultado do Teste:</label>
+        <textarea id="test-result" placeholder="Digite o resultado do teste" required></textarea>
+
+        <button type="submit">Registrar Teste</button>
+        <button id="delete-button">Apagar Testes</button>
+    </form>
+
+    <h1><b>Lista de Sites Testados</b></h1>
+    <ul id="site-list" class="site-list"></ul>
+</body>
+</html>
